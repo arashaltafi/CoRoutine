@@ -1,10 +1,11 @@
-package com.arash.altafi.coroutine
+package com.arash.altafi.coroutine.sample3
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 
-class MainViewModel() : ViewModel() {
+class SampleActivity3ViewModel : ViewModel() {
 
     private val _test1 : MutableLiveData<String> = MutableLiveData()
     val test1 : MutableLiveData<String> = _test1
@@ -23,6 +24,5 @@ class MainViewModel() : ViewModel() {
 //        started = SharingStarted.WhileSubscribed(1000),
 //        initialValue = "Arash Altafi 4"
 //    )
-
 
 }
