@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/drawable/ic_add.xml" value="0.136" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_coroutine_flow.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_coroutine_job.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_getting_started.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_job_time_out.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_lifecycle_scope.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_live_data_scope.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_main.xml" value="0.1828125" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_parallel_network_call.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_room_basic.xml" value="0.17407407407407408" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_sample0.xml" value="0.1828125" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_sequential_parallel_task.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_single_network_call.xml" value="0.17407407407407408" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_single_network_call_with_images.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/activity_view_model_scope.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/child_single_network_call_with_images.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/Arash/Desktop/1/CoRoutine/app/src/main/res/layout/child_todo_list.xml" value="0.33425925925925926" />
         <entry key="..\:/Users/Arash/Desktop/source-android/GIT/coroutine/app/src/main/res/layout/activity_main.xml" value="0.32037037037037036" />
         <entry key="..\:/Users/Arash/Desktop/source-android/GIT/coroutine/app/src/main/res/layout/activity_main2.xml" value="0.3734375" />
         <entry key="..\:/Users/Arash/Desktop/source-android/GIT/coroutine/app/src/main/res/layout/activity_sample1.xml" value="0.3734375" />

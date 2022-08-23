@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.arash.altafi.coroutine">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,7 +13,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CoRoutine">
+        android:theme="@style/Theme.CoRoutine"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".sample0.localcall.RoomBasicActivity" />
+        <activity android:name=".sample0.networkcall.SingleNetworkCallWithImagesActivity" />
+        <activity android:name=".sample0.coroutineflow.CoroutineFlowActivity" />
+        <activity android:name=".sample0.networkcall.SequentialNetworkCallActivity" />
+        <activity android:name=".sample0.networkcall.ParallelNetworkCallActivity" />
+        <activity android:name=".sample0.networkcall.SingleNetworkCallActivity" />
+        <activity android:name=".sample0.livedatascope.LiveDataScopeActivity" />
+        <activity android:name=".sample0.viewmodelscope.ViewModelScopeActivity" />
+        <activity android:name=".sample0.lifecyclescope.LifecycleScopeActivity" />
+        <activity android:name=".sample0.sequentialparalleltask.SequentialParallelTaskActivity" />
+        <activity android:name=".sample0.coroutinejob.CoroutineJobActivity" />
+        <activity android:name=".sample0.jobtimeout.JobTimeOutActivity" />
+        <activity android:name=".sample0.gettingstarted.GettingStartedActivity" />
+        <activity
+            android:name=".sample0.SampleActivity0"
+            android:exported="true" />
         <activity
             android:name=".sample4.SampleActivity4"
             android:exported="true" />
@@ -24,7 +43,7 @@
             android:exported="true" />
         <activity
             android:name=".sample2.SampleActivity2"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

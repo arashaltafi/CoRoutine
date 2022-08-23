@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gettingStated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Getting Started"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/jobTimeOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job TimeOut"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/coroutineJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="coroutine Job"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sequentialParallel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sequential Parallel Task"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/coroutineFlow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coroutine Flow"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lifecycleScope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lifecycle Scope"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/viewModelScope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewModel Scope"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/liveDataScope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="liveData Scope"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/singleNetworkCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Single Network Call"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/parallelNetworkCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parallel Network Call"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sequentialNetworkCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sequential Network Call"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/singleNetworkCallWithImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sequential Network Call With Images"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/roomBasic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Room Basic"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
