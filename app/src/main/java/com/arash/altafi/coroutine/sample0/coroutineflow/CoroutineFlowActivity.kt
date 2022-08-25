@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.arash.altafi.coroutine.databinding.ActivityCoroutineFlowBinding
 import kotlinx.coroutines.CoroutineScope
@@ -14,6 +15,11 @@ import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
 class CoroutineFlowActivity : AppCompatActivity() {
+
+    private val viewModel: ViewModelFlow by lazy {
+        ViewModelProvider(this)[ViewModelFlow::class.java]
+    }
+
     private val binding: ActivityCoroutineFlowBinding by lazy {
         ActivityCoroutineFlowBinding.inflate(layoutInflater)
     }
@@ -35,6 +41,15 @@ class CoroutineFlowActivity : AppCompatActivity() {
                         delay(1000)
                         setText(binding.basicTextView1, it)
                     }
+                }
+            }
+        }
+
+        binding.btnViewModel.setOnClickListener {
+            viewModel.getData()
+            viewModel.liveInfo.observe(this) {
+                it.forEach {
+                    setText(binding.basicTextView2, it)
                 }
             }
         }

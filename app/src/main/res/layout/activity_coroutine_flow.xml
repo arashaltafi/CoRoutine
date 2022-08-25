@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Basic"
+        android:text="Basic 1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
@@ -30,6 +30,30 @@
         tools:text="TextView" />
 
     <Button
+        android:id="@+id/btnViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="view model"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basicButton1"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/basicTextView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnViewModel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnViewModel"
+        app:layout_constraintTop_toTopOf="@+id/btnViewModel"
+        tools:text="TextView" />
+
+    <Button
         android:id="@+id/basicButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,9 +61,8 @@
         android:layout_marginTop="16dp"
         android:text="Basic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/basicButton1"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewModel"
         tools:ignore="HardcodedText" />
-
 
     <TextView
         android:id="@+id/basicTextView"
