@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.arash.altafi.coroutine.databinding.ActivityCoroutineFlowBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -27,6 +28,17 @@ class CoroutineFlowActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun onClickListener() {
+        binding.basicButton1.setOnClickListener {
+            lifecycleScope.launch {
+                test().collect {
+                    it.collect {
+                        delay(1000)
+                        setText(binding.basicTextView1, it)
+                    }
+                }
+            }
+        }
+
         binding.basicButton.setOnClickListener {
             CoroutineScope(Main).launch {
                 // is called when ever a value is received
@@ -103,6 +115,21 @@ class CoroutineFlowActivity : AppCompatActivity() {
     private fun fetchMapResult(): Flow<Int> = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).asFlow().map {
         delay(1000)
         it * it
+    }
+
+    private fun test(): Flow<Flow<Int>> {
+        return flow {
+            val list = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                .map {
+                    it * 2
+                }
+                .filter {
+                    it % 2 == 0
+                }
+                .asFlow()
+                .flowOn(Dispatchers.IO)
+            emit(list)
+        }
     }
 
     private fun fetchFilterResult(): Flow<Int> = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).asFlow().filter {
